@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Amarachi Ayogu</title>
+  <meta name="description" content="Frontend projects including a browser extensions manager, an e-commerce site, an image gallery, a music player, and a calculator.">
+  <!-- Favicon placeholder: replace assets/images/favicon.svg with your own icon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html" aria-label="Amarachi Ayogu — home">
+        <span class="logo-mark" aria-hidden="true">AA</span>
+        <span>Amarachi Ayogu</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro" aria-labelledby="projects-title">
+      <div class="container">
+        <h1 id="projects-title">Projects</h1>
+        <p>Five frontend projects built while learning HTML, CSS, and JavaScript. Open any live demo to try it yourself.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Project gallery">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="htmlcss" aria-pressed="false">HTML/CSS</button>
+          <button class="filter-btn" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+          <button class="filter-btn" type="button" data-filter="responsive" aria-pressed="false">Responsive Design</button>
+        </div>
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite">Showing 5 projects</p>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="javascript responsive">
+            <div class="image-slot project-thumb">
+              <img src="assets/images/projects/browser-extensions-manager.jpg" alt="Screenshot of the Browser Extensions Manager project" width="640" height="400" loading="lazy">
+              <div class="slot-fallback"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>Add screenshot:<br>assets/images/projects/browser-extensions-manager.jpg</div>
+            </div>
+            <div class="project-body">
+              <h3>Browser Extensions Manager</h3>
+              <p>A responsive browser extensions management interface that allows users to view, organize, and interact with browser extensions.</p>
+              <ul class="chip-list" aria-label="Technologies used">
+                <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn--primary btn--small" href="https://marapeace.github.io/browser-extensions-manager/" target="_blank" rel="noopener noreferrer" aria-label="View live: Browser Extensions Manager (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>View Live</a>
+                <!-- To add a code button, uncomment and add your real repository URL:
+                <a class="btn btn--outline btn--small" href="YOUR_REPO_URL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>View Code</a> -->
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="htmlcss responsive">
+            <div class="image-slot project-thumb">
+              <img src="assets/images/projects/bagverse.jpg" alt="Screenshot of the BagVerse project" width="640" height="400" loading="lazy">
+              <div class="slot-fallback"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>Add screenshot:<br>assets/images/projects/bagverse.jpg</div>
+            </div>
+            <div class="project-body">
+              <h3>BagVerse</h3>
+              <p>A responsive fictional bag e-commerce website created to demonstrate frontend design, layout, product presentation, and responsive development.</p>
+              <ul class="chip-list" aria-label="Technologies used">
+                <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn--primary btn--small" href="https://marapeace.github.io/bagverse/index.html" target="_blank" rel="noopener noreferrer" aria-label="View live: BagVerse (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>View Live</a>
+                <!-- To add a code button, uncomment and add your real repository URL:
+                <a class="btn btn--outline btn--small" href="YOUR_REPO_URL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>View Code</a> -->
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="htmlcss responsive">
+            <div class="image-slot project-thumb">
+              <img src="assets/images/projects/image-gallery.jpg" alt="Screenshot of the Image Gallery project" width="640" height="400" loading="lazy">
+              <div class="slot-fallback"><i class="fa-solid fa-images" aria-hidden="true"></i>Add screenshot:<br>assets/images/projects/image-gallery.jpg</div>
+            </div>
+            <div class="project-body">
+              <h3>Image Gallery</h3>
+              <p>A responsive image gallery project focused on presenting images in a clean and interactive layout.</p>
+              <ul class="chip-list" aria-label="Technologies used">
+                <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn--primary btn--small" href="https://marapeace.github.io/CodeAlpha_image-gallery/" target="_blank" rel="noopener noreferrer" aria-label="View live: Image Gallery (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>View Live</a>
+                <!-- To add a code button, uncomment and add your real repository URL:
+                <a class="btn btn--outline btn--small" href="YOUR_REPO_URL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>View Code</a> -->
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="javascript">
+            <div class="image-slot project-thumb">
+              <img src="assets/images/projects/music-player.jpg" alt="Screenshot of the Music Player project" width="640" height="400" loading="lazy">
+              <div class="slot-fallback"><i class="fa-solid fa-music" aria-hidden="true"></i>Add screenshot:<br>assets/images/projects/music-player.jpg</div>
+            </div>
+            <div class="project-body">
+              <h3>Music Player</h3>
+              <p>A browser-based music player interface demonstrating frontend interaction, JavaScript functionality, and user interface design.</p>
+              <ul class="chip-list" aria-label="Technologies used">
+                <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn--primary btn--small" href="https://marapeace.github.io/CodeAlpha_Music-player/" target="_blank" rel="noopener noreferrer" aria-label="View live: Music Player (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>View Live</a>
+                <!-- To add a code button, uncomment and add your real repository URL:
+                <a class="btn btn--outline btn--small" href="YOUR_REPO_URL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>View Code</a> -->
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="javascript">
+            <div class="image-slot project-thumb">
+              <img src="assets/images/projects/calculator.jpg" alt="Screenshot of the Calculator project" width="640" height="400" loading="lazy">
+              <div class="slot-fallback"><i class="fa-solid fa-calculator" aria-hidden="true"></i>Add screenshot:<br>assets/images/projects/calculator.jpg</div>
+            </div>
+            <div class="project-body">
+              <h3>Calculator</h3>
+              <p>A functional calculator built with HTML, CSS, and JavaScript, demonstrating DOM manipulation and interactive functionality.</p>
+              <ul class="chip-list" aria-label="Technologies used">
+                <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn--primary btn--small" href="https://marapeace.github.io/CodeAlpha_calculator/" target="_blank" rel="noopener noreferrer" aria-label="View live: Calculator (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>View Live</a>
+                <!-- To add a code button, uncomment and add your real repository URL:
+                <a class="btn btn--outline btn--small" href="YOUR_REPO_URL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>View Code</a> -->
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Amarachi Ayogu</h2>
+          <p>Frontend developer in training and Medical Radiography student, building responsive websites and growing in IT support and customer-focused technology.</p>
+        </div>
+        <div>
+          <h2>Quick links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Get in touch</h2>
+          <ul class="footer-links">
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:amarachiayogu250@gmail.com">amarachiayogu250@gmail.com</a></li>
+            <li><i class="fa-brands fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/amarachi-peace-ayogu-6a6934332" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><i class="fa-brands fa-github" aria-hidden="true"></i><a href="https://github.com/marapeace" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> Amarachi Ayogu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

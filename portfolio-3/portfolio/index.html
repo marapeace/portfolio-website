@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amarachi Ayogu | Frontend Developer &amp; Technology Professional</title>
+  <meta name="description" content="Portfolio of a Medical Radiography student and frontend developer in training, with responsive web projects and an interest in IT support.">
+  <!-- Favicon placeholder: replace assets/images/favicon.svg with your own icon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html" aria-label="Amarachi Ayogu — home">
+        <span class="logo-mark" aria-hidden="true">AA</span>
+        <span>Amarachi Ayogu</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Hi, I'm Amarachi Ayogu. I build responsive websites with the user in mind.</h1>
+          <p class="hero-role">Frontend Developer | IT Support | Customer-Focused Technology</p>
+          <p class="hero-text">I'm a Medical Radiography student with a strong interest in technology. I'm learning frontend development, building useful digital experiences, and developing the IT and customer support skills that help people get things done.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="projects.html">View My Projects</a>
+            <a class="btn btn--outline" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+
+        <figure class="browser-frame">
+          <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <!-- Your photo lives at assets/images/profile.jpg -->
+          <div class="image-slot profile-slot">
+            <img src="assets/images/profile.jpg" alt="Portrait of Amarachi Ayogu" width="420" height="462">
+            <div class="slot-fallback"><i class="fa-regular fa-user" aria-hidden="true"></i>Add your photo at<br>assets/images/profile.jpg</div>
+          </div>
+          <figcaption class="hero-caption">Medical Radiography student &middot; Frontend developer in training</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="focus-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="focus-title">What I focus on</h2>
+          <p>The areas I'm building skills in and the kind of work I enjoy most.</p>
+        </div>
+        <ul class="focus-grid">
+          <li class="focus-item reveal"><i class="fa-solid fa-code" aria-hidden="true"></i>Frontend Development</li>
+          <li class="focus-item reveal"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>Responsive Web Design</li>
+          <li class="focus-item reveal"><i class="fa-solid fa-laptop-medical" aria-hidden="true"></i>IT Support</li>
+          <li class="focus-item reveal"><i class="fa-solid fa-headset" aria-hidden="true"></i>Customer Support</li>
+          <li class="focus-item reveal"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>Problem Solving</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta-title" style="padding-top:0">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2 id="cta-title">See what I've built</h2>
+            <p>Five hands-on projects, each with a live demo you can open and try.</p>
+          </div>
+          <a class="btn btn--primary" href="projects.html">Browse projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Amarachi Ayogu</h2>
+          <p>Frontend developer and Medical Radiography student, building responsive websites and growing in IT support and customer-focused technology.</p>
+        </div>
+        <div>
+          <h2>Quick links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Get in touch</h2>
+          <ul class="footer-links">
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:amarachiayogu250@gmail.com">amarachiayogu250@gmail.com</a></li>
+            <li><i class="fa-brands fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/amarachi-peace-ayogu-6a6934332" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><i class="fa-brands fa-github" aria-hidden="true"></i><a href="https://github.com/marapeace" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> Amarachi Ayogu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
